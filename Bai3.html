@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 hàm  tính  tuổi của một  người</title>
+</head>
+<body>
+<script>
+    function tinhTuoi(n) {
+        let d = new Date();
+        let yearNow = d.getFullYear();
+        if(yearNow <n){
+            alert("Nhập năm  sinh không hợp  lệ ");
+            return ;
+        }else{
+            let tuoi = yearNow - n;
+
+            return tuoi;
+
+        }
+
+    }
+    let n =Number(prompt("nhập năm  sinh của  bạn "))
+    alert("Tuổi của  bạn là "+ tinhTuoi(n));
+
+</script>
+</body>
+</html>

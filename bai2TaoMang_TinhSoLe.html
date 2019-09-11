@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2 Tạo  mảng  tính số  lẻ  trong mảng </title>
+</head>
+<body>
+<script>
+    function mang(){
+        //nhập  mảng
+        let number = Number(prompt("nhập số phần tủ trong mảng"));
+        let arry = new Array();
+        for(let i  = 0 ; i< number; i++){
+            let pt = Number(prompt("nhập  phần tử"+(i+1)));
+            arry[i] = pt;
+
+        }
+        let sum =0;
+        for(let i =0;i<arry.length;i++){
+            if(arry[i] % 2 == 1){
+                sum= sum +arry[i];
+            }
+
+        }
+        document.write("Mang :"+arry+"<br/>");
+        document.write("Tong phan tu  co gia tri le :"+sum);
+
+
+    }
+    mang();
+</script>
+</body>
+</html>
